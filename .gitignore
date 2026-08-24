@@ -1,0 +1,18 @@
+# Segredos
+.env
+
+# Imagens Docker exportadas (não versionar builds)
+*.tar
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+specs/
+.venv/
+venv/
+
+# WSL / Windows
+*:Zone.Identifier
+

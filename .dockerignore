@@ -1,0 +1,16 @@
+# Estratégia de lista de permissões: por padrão nada entra no contexto de build.
+# É mais seguro que enumerar exclusões — um arquivo novo (um segredo, um dump,
+# uma imagem exportada) não vaza para dentro da imagem por esquecimento.
+*
+
+# Apenas o que a aplicação precisa para executar e ser testada:
+!app/
+!tests/
+!environment.yml
+!pytest.ini
+!README.md
+
+# Reexclusões dentro do que foi permitido acima
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/

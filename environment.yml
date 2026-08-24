@@ -1,0 +1,17 @@
+name: pdf_flashcards
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - fastapi
+  - uvicorn
+  - pip
+  - pip:
+      - pypdf
+      - openai
+      - python-multipart
+      - pydantic-settings
+      # Ferramentas de teste: mantidas no mesmo ambiente porque o projeto usa um
+      # único env conda, como pede o roteiro da disciplina.
+      - pytest
+      - httpx
